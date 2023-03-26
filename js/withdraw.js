@@ -35,6 +35,7 @@ document.getElementById('withdrawBtn').addEventListener('click', function () {
     }
     else if (isNaN(withdrawAmount)) {
         alert('please insert a value number');
+        withdrawField.value = '';
         return;
     }
     //step 3

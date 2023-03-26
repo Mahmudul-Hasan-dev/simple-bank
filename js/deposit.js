@@ -20,6 +20,13 @@ document.getElementById('depositBtn').addEventListener('click', function () {
     const newdepositAmountString = depositField.value;
     const newdepositAmount = parseFloat(newdepositAmountString);
 
+    //va;idation
+    if (isNaN(newdepositAmount)) {
+        alert('please insert a value number');
+        depositField.value = '';
+        return;
+    }
+
     //third step
     depositField.value = '';
 
