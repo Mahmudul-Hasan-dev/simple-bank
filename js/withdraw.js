@@ -33,6 +33,10 @@ document.getElementById('withdrawBtn').addEventListener('click', function () {
         alert('you dont have enough money');
         return;
     }
+    else if (isNaN(withdrawAmount)) {
+        alert('please insert a value number');
+        return;
+    }
     //step 3
     const previouswithdrawTotal = document.getElementById('withdraw-total');
     const previouswithdrawTotalstring = previouswithdrawTotal.innerText;
