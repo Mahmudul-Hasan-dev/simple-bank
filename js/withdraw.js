@@ -27,6 +27,7 @@ document.getElementById('withdrawBtn').addEventListener('click', function () {
     const prevBalanceTotal = document.getElementById('balance-total');
     const prevBalanceTotalString = prevBalanceTotal.innerText;
     const prevBalanceTotalAmount = parseFloat(prevBalanceTotalString);
+
     //validation
     if (withdrawAmount > prevBalanceTotalAmount) {
         alert('you dont have enough money');
